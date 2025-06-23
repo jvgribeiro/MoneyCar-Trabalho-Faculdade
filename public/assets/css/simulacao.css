@@ -1,0 +1,122 @@
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Cabeçalho padrão */
+
+header img {
+  height: 100px;
+  width: 200px;
+}
+#cabecalho {
+  background-color: #edb021;
+  padding: 0;
+  margin: 0;
+}
+
+.cabecalho-icons {
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+}
+
+.textos-cabecalho {
+  align-items: center;
+}
+
+/* Section */
+/* Espaçamento geral da seção */
+section.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Título da seção */
+section.container h2 {
+  color: #212529;
+  font-size: 1.8rem;
+}
+
+/* Estilo dos inputs e selects */
+section.container .form-control,
+section.container .form-select {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+}
+
+/* Estilo do botão */
+section.container .btn-warning {
+  background-color: #f7b500;
+  border: none;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+section.container .btn-warning:hover {
+  background-color: #d99a00;
+}
+
+/* Espaçamento entre rótulo e campos */
+section.container .form-label {
+  margin-bottom: 6px;
+}
+
+/* Estilo do range e seus marcadores */
+section.container .form-range {
+  height: 5px;
+  background-color: #007bff;
+  border-radius: 5px;
+  outline: none;
+}
+
+section.container .form-range::-webkit-slider-thumb {
+  background-color: #007bff;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -7px;
+}
+
+section.container .form-range::-moz-range-thumb {
+  background-color: #007bff;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 576px) {
+  section.container h2 {
+    font-size: 1.4rem;
+  }
+
+  section.container .btn-warning {
+    font-size: 1rem;
+  }
+}
+
+
+/* Rodapé */
+
+footer {
+  background-color: #edb021;
+  padding: 0;
+  margin: 0;
+}
+
+footer img {
+  height: 75px;
+  width: 150px;
+}
+
+footer div a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,81 @@
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Cabeçalho padrão */
+
+header img {
+  height: 100px;
+  width: 200px;
+}
+#cabecalho {
+  background-color: #edb021;
+  padding: 0;
+  margin: 0;
+}
+
+.cabecalho-icons {
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+}
+
+.textos-cabecalho {
+  align-items: center;
+}
+
+/* Section */
+
+section {
+  padding-left: 250px;
+  padding-right: 250px;
+
+}
+section img {
+  height: 450px;
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-left: 175px;
+  padding-top: 10px;
+}
+span {
+  color: #edb021;
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+#motor {
+  margin-top: -100px;
+  padding-top: 0;
+}
+
+h6 {
+  font-weight: 100;
+}
+
+/* Rodapé */
+
+footer {
+  background-color: #edb021;
+  padding: 0;
+  margin: 0;
+}
+
+footer img {
+  height: 75px;
+  width: 150px;
+}
+
+footer div a {
+  text-decoration: none;
+  color: black;
+}
+
+.img-logo{
+  width: 17rem;
+  height: 17rem;
+}

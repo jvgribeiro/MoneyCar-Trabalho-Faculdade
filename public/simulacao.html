@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/public/assets/imagens-geral/MONEY_CAR-removebg-preview.png" type="image/x-icon"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="/public/assets/css/simulacao.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <title>Simulação</title>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header id="cabecalho" class="py-2">
+    <nav class="navbar navbar-expand-lg container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/imagens-geral/MONEY_CAR-removebg-preview.png" alt="Logo Money Car" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse textos-cabecalho" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="simulacao.html">Opções de simulação</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Comprar carros</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/public/tela-todos-carros.html">Todos os carros</a></li>
+              <li>
+                <a class="dropdown-item" href="/public/tela-novos.html">Carros novos</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/public/tela-usados.html">Carros usados</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <a href="contato.html">
+          <img class="cabecalho-icons" src="assets/imagens-geral/contact-us.png" alt="Contato" />
+        </a>
+        <a href="login.html">
+          <img class="cabecalho-icons" src="assets/imagens-geral/icon.png" alt="Login" />
+        </a>
+        <a href="adicionar-carro.html">
+          <img class="cabecalho-icons" src="assets/imagens-geral/adicionar.png" alt="Login" />
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!--Conteudo de simulações-->
+  <section class="container my-5">
+    <h2 class="mb-4 fw-bold">Simule seu financiamento:</h2>
+
+    <form>
+      <div class="mb-3">
+        <label for="modelo" class="form-label fw-semibold">Modelo do veículo</label>
+        <select id="modelo" class="form-select">
+          <option value="">-- Selecione um modelo --</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="valorVeiculo" class="form-label fw-semibold">Valor do veículo</label>
+        <input type="text" class="form-control" id="valorVeiculo" value="R$" readonly />
+      </div>
+
+      <div class="mb-3">
+        <label for="entrada" class="form-label fw-semibold">Valor da entrada</label>
+        <input type="text" class="form-control" id="entrada" value="R$ 5.000,00" />
+      </div>
+
+      <div class="mb-3">
+        <label for="prazo" class="form-label fw-semibold">Prazo (meses)</label>
+        <input type="number" class="form-control" id="prazoAtual" value="60" />
+      </div>
+
+      <div class="mb-4">
+        <label for="juros" class="form-label fw-semibold">Taxa de juros (simulada)</label>
+        <input type="range" class="form-range" id="juros" min="12" max="60" value="60" />
+        <div class="d-flex justify-content-between">
+          <span>12</span>
+          <span id="taxaJuros">1,80% a.m</span>
+          <span>60</span>
+        </div>
+      </div>
+
+      <button id="btn_continuar" class="btn btn-warning w-100 fw-bold">
+        Continuar
+      </button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="py-3 mt-5 fixed-bottom">
+    <div class="container">
+      <div class="row text-center text-lg-start align-items-center">
+        <div class="col-lg-3 mb-3">
+          <img src="assets/imagens-geral/MONEY_CAR-removebg-preview.png" alt="Logo MoneyCar" class="img-fluid"
+            style="max-width: 150px" />
+        </div>
+        <div class="col-lg-6 mb-3">
+          <div class="d-flex flex-column gap-2">
+            <div><i class="fas fa-file-alt me-2"></i> Nossas diretrizes</div>
+            <div>
+              <a href="contato.html"><i class="fas fa-phone me-2"></i> Contato</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 small">
+          <p class="mb-0">
+            &copy; 2025 MoneyCar. Todos os direitos reservados.<br />
+            Proibida a reprodução total ou parcial sem autorização prévia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/public/assets/javascript/simulacaocalculo.js"></script>
+  <script src="/public/assets/javascript/telasimulacao.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

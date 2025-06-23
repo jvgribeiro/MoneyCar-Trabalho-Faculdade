@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoneyCar - Comprar Carros</title>
+  <link rel="shortcut icon" href="/public/assets/imagens-geral/MONEY_CAR-removebg-preview.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="assets/css/tela-inicial.css" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header id="cabecalho" class="py-2">
+    <nav class="navbar navbar-expand-lg container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/imagens-geral/MONEY_CAR-removebg-preview.png" alt="Logo Money Car" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse textos-cabecalho" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="simulacao.html">Opções de simulação</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Comprar carros</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/public/tela-todos-carros.html">Todos os carros</a></li>
+              <li>
+                <a class="dropdown-item" href="/public/tela-novos.html">Carros novos</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/public/tela-usados.html">Carros usados</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <a href="contato.html">
+          <img class="cabecalho-icons" src="assets/imagens-geral/contact-us.png" alt="Contato" />
+        </a>
+        <a href="login.html">
+          <img class="cabecalho-icons" src="assets/imagens-geral/icon.png" alt="Login" />
+        </a>
+        <a href="adicionar-carro.html">
+          <img class="cabecalho-icons" src="assets/imagens-geral/adicionar.png" alt="Login" />
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <div class="content-wrapper d-flex flex-column min-vh-100">
+    <main class="container flex-grow-1 my-5">
+      <div class="border rounded p-5 text-center mx-auto div-central">
+        <h2 class="mb-4">Comprar carros</h2>
+
+        <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
+          <a href="tela-todos-carros.html">
+            <button type="button" class="btn btn-outline-dark btn-lg">Todos</button>
+          </a>
+          <a href="tela-novos.html">
+            <button type="button" class="btn btn-outline-dark btn-lg">Novos</button>
+          </a>
+          <a href="tela-usados.html">
+            <button type="button" class="btn btn-outline-dark btn-lg">Usados</button>
+          </a>
+        </div>
+
+        <div class="input-group input-group-lg mt-5 mb-4">
+          <input type="text" class="form-control" placeholder="Pesquise pelo nome do carro" />
+          <button class="btn btn-ofertas" type="button">Ofertas</button>
+        </div>
+      </div>
+
+      <div class="row text-center mt-5 g-3">
+        <div class="col-md-4">
+          <a href="login.html">
+            <div class="border p-3 h-100">
+              <i class="fas fa-user fa-2x mb-2"></i>
+              <h5>Faça login</h5>
+              <p>Tenha sua conta em nosso site!</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="simulacao.html">
+            <div class="border p-3 h-100">
+              <i class="fas fa-calculator fa-2x mb-2"></i>
+              <h5>Simulações</h5>
+              <p>Faça aqui suas simulações de financiamento!</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="contato.html">
+            <div class="border p-3 h-100">
+              <i class="fas fa-envelope fa-2x mb-2"></i>
+              <h5>Contato</h5>
+              <p>Contate nosso suporte para tirar suas dúvidas!</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="py-3 mt-5 fixed-bottom">
+      <div class="container">
+        <div class="row text-center text-lg-start align-items-center">
+          <div class="col-lg-3 mb-3">
+            <img src="assets/imagens-geral/MONEY_CAR-removebg-preview.png" alt="Logo MoneyCar" class="img-fluid"
+              style="max-width: 150px" />
+          </div>
+          <div class="col-lg-6 mb-3">
+            <div class="d-flex flex-column gap-2">
+              <div><i class="fas fa-file-alt me-2"></i> Nossas diretrizes</div>
+              <div>
+                <a href="contato.html"><i class="fas fa-phone me-2"></i> Contato</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 small">
+            <p class="mb-0">
+              &copy; 2025 MoneyCar. Todos os direitos reservados.<br />
+              Proibida a reprodução total ou parcial sem autorização prévia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+
+</html>
